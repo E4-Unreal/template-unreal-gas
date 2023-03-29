@@ -30,6 +30,9 @@ public class GASTemplate : ModuleRules
 			/* For Modular Gameplay Features */
 			"ModularGameplay",
 			"GameFeatures",
+			
+			/* For SimpleMGF Plugin */
+			"SimpleMGFGame",
 		});
 	}
 }
