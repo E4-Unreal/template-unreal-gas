@@ -8,6 +8,28 @@ public class GASTemplate : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			// Default Modules
+			"Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "EnhancedInput"
+			
+			// Additional Modules
+		});
+		
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
+			// Default Modules
+
+			// Additional Modules
+			
+			/* For Gameplay Ability System */
+			"GameplayTags",
+			"GameplayAbilities",
+			"GameplayTasks",
+			
+			/* For Modular Gameplay Features */
+			"ModularGameplay",
+			"GameFeatures",
+		});
 	}
 }
